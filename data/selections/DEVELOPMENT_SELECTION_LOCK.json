@@ -1,0 +1,151 @@
+{
+  "cohort": "development",
+  "selection_protocol": "v4_strict_ratio_crossK_reuse",
+  "n_hmms": 24,
+  "hmm_files": [
+    {
+      "hmm_id": "bank_K3_i000535",
+      "sha256": "44f66c57b805bfa31539904adf6a91b5e9099b7603e8337e0b0c71858cc779fb",
+      "K": 3,
+      "gen_seed": 21100853
+    },
+    {
+      "hmm_id": "bank_K3_i000588",
+      "sha256": "ef67caa928770f32fcbcf88492094525fcbea66b660fe9aff15941481623e3c8",
+      "K": 3,
+      "gen_seed": 21154364
+    },
+    {
+      "hmm_id": "bank_K3_i000606",
+      "sha256": "2bb9fdbba588c5dbba02a1d80c1a8b404147b3c782fae1fd58554804d24f5055",
+      "K": 3,
+      "gen_seed": 21172543
+    },
+    {
+      "hmm_id": "bank_K3_i000981",
+      "sha256": "e288a76aa099dbb430e4e1cf868cce0e171623947d2a06e55d183bf5727f96b4",
+      "K": 3,
+      "gen_seed": 21551156
+    },
+    {
+      "hmm_id": "bank_K3_i001156",
+      "sha256": "d2b6edfeaf8d9317257a676115ac6d30d4615edd7e217ad13b70f77e83290cb7",
+      "K": 3,
+      "gen_seed": 21727833
+    },
+    {
+      "hmm_id": "bank_K3_i001280",
+      "sha256": "9a1f0646a475438b4e15018d8292a1ed561f106983094e2b26aa0cee3b3abbfe",
+      "K": 3,
+      "gen_seed": 21853034
+    },
+    {
+      "hmm_id": "bank_K4_i000177",
+      "sha256": "a837ab8c56bc244c6b0ac6855b59d5c358d1ee907c46aee34449ad9636aad104",
+      "K": 4,
+      "gen_seed": 20839410
+    },
+    {
+      "hmm_id": "bank_K4_i000290",
+      "sha256": "22673ed8439bad531624625f6a5f4ef4d0c9a2ccb1293bba0e59eab2d6c2b9ce",
+      "K": 4,
+      "gen_seed": 20953495
+    },
+    {
+      "hmm_id": "bank_K4_i000342",
+      "sha256": "a7d7e2425953ece54ea78ca01ea1bbdbabe98c0e6104f0ca9946ec9941a28fca",
+      "K": 4,
+      "gen_seed": 21005997
+    },
+    {
+      "hmm_id": "bank_K4_i000388",
+      "sha256": "f2da987a26d23a599f90e2364c365ffbf7541f7ff9e7148520418bf7bfd9d6eb",
+      "K": 4,
+      "gen_seed": 21052445
+    },
+    {
+      "hmm_id": "bank_K4_i001020",
+      "sha256": "cc93be50c882f760e128e2330dd3abbe881ce2e11f27709f9d0c63f551dc381c",
+      "K": 4,
+      "gen_seed": 21690524
+    },
+    {
+      "hmm_id": "bank_K4_i001162",
+      "sha256": "95bf23e8804f7e3ba7e73553bfcf275a97fc311d92fca1c645c94676542f60f4",
+      "K": 4,
+      "gen_seed": 21833904
+    },
+    {
+      "hmm_id": "bank_K5_i000458",
+      "sha256": "ff663e1c98105ee811203344f1d44baf19612c8b802d4f46b40409dd7c548eaa",
+      "K": 5,
+      "gen_seed": 21223109
+    },
+    {
+      "hmm_id": "bank_K5_i000474",
+      "sha256": "0435ab17418481eeca1674a153c905735573524d601feaa3400c4dcc5d75cda9",
+      "K": 5,
+      "gen_seed": 21239270
+    },
+    {
+      "hmm_id": "bank_K5_i000809",
+      "sha256": "f393489e0a09fe4175b49e406527c9be8aed8e717ffa4f9b2665b050af135266",
+      "K": 5,
+      "gen_seed": 21577489
+    },
+    {
+      "hmm_id": "bank_K5_i001027",
+      "sha256": "1f6984fe4d3360900004401d6b3c87521dda244119fb0c49241d7949f0eeeb3b",
+      "K": 5,
+      "gen_seed": 21797604
+    },
+    {
+      "hmm_id": "bank_K5_i001052",
+      "sha256": "40fd7fa15eacab3652bb91523d3213219d5bf51a2141b9eda97b4b52ed676286",
+      "K": 5,
+      "gen_seed": 21822829
+    },
+    {
+      "hmm_id": "bank_K5_i001077",
+      "sha256": "c41f22e04e1cbae13622db438652b2d7a93eb71c8ce83c7f691582b7f32905ae",
+      "K": 5,
+      "gen_seed": 21848071
+    },
+    {
+      "hmm_id": "bank_K6_i000011",
+      "sha256": "268aff7bb0f296e79f8e6e4b086fa244d1d37b7abe1915b3a7af76474c3e958c",
+      "K": 6,
+      "gen_seed": 20871814
+    },
+    {
+      "hmm_id": "bank_K6_i000247",
+      "sha256": "1ec5ff0d88e2d3d0f1e8f851081319580d84cdb86093d215f6fdf8e38de46817",
+      "K": 6,
+      "gen_seed": 21110091
+    },
+    {
+      "hmm_id": "bank_K6_i000250",
+      "sha256": "dfbd220437b287e61c68429ac91208e4fcf4b06c175cb4bbd1b2ee84d45bf9ca",
+      "K": 6,
+      "gen_seed": 21113118
+    },
+    {
+      "hmm_id": "bank_K6_i000271",
+      "sha256": "7bc643a3ddef7142271d89774d84e84225fed08c75476abf70187d76c9b629f1",
+      "K": 6,
+      "gen_seed": 21134324
+    },
+    {
+      "hmm_id": "bank_K6_i000573",
+      "sha256": "301c058bc471becc34349b3c4207a141465f1a269609e3199891d02a42c53b34",
+      "K": 6,
+      "gen_seed": 21439229
+    },
+    {
+      "hmm_id": "bank_K6_i000993",
+      "sha256": "c12bdae60b47c134fb0e60861f0c735ada8d60981fb78aaeb339d6ae55ff920c",
+      "K": 6,
+      "gen_seed": 21863264
+    }
+  ]
+}

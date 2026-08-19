@@ -1,0 +1,118 @@
+{
+  "study": "predictor_specific_difficulty",
+  "version": "predictor_specific_difficulty_matched_v1",
+  "source_confirmatory_root": "project://predictive_profile_confirmatory64_v1",
+  "selection": {
+    "outcome_blind": true,
+    "exclude_previous_confirmatory_hmms": true,
+    "K_values": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "pairs_per_K_per_contrast": 3,
+    "contrasts": {
+      "occupancy_contrast": {
+        "description": "Effective length-4 context count differs while gain, rank, sigma, mixing, Bayes CE, spectral signal, and min-symbol probability are controlled. Symbol entropy is recorded but not matched because it is structurally coupled to H(U_4) in this generator.",
+        "tiers": [
+          {
+            "min_occupancy_ratio": 2.0,
+            "max_gain_ratio": 1.5,
+            "max_sigma_ratio": 1.5,
+            "max_tau_ratio": 1.5,
+            "max_bayes_ratio": 1.15,
+            "max_signal_ratio": 2.0,
+            "max_minprob_ratio": 2.0
+          },
+          {
+            "min_occupancy_ratio": 1.8,
+            "max_gain_ratio": 1.6,
+            "max_sigma_ratio": 1.6,
+            "max_tau_ratio": 1.6,
+            "max_bayes_ratio": 1.2,
+            "max_signal_ratio": 2.5,
+            "max_minprob_ratio": 3.0
+          }
+        ]
+      },
+      "gain_contrast": {
+        "description": "Context gain differs while length-4 context occupancy, symbol entropy, min-symbol probability, rank, sigma, mixing, Bayes CE, and spectral signal are controlled.",
+        "tiers": [
+          {
+            "min_gain_ratio": 4.0,
+            "max_occupancy_ratio": 1.25,
+            "max_entropy_difference": 0.05,
+            "max_minprob_ratio": 2.0,
+            "max_sigma_ratio": 1.5,
+            "max_tau_ratio": 1.5,
+            "max_bayes_ratio": 1.15,
+            "max_signal_ratio": 2.0
+          },
+          {
+            "min_gain_ratio": 3.0,
+            "max_occupancy_ratio": 1.35,
+            "max_entropy_difference": 0.08,
+            "max_minprob_ratio": 3.0,
+            "max_sigma_ratio": 1.6,
+            "max_tau_ratio": 1.6,
+            "max_bayes_ratio": 1.2,
+            "max_signal_ratio": 2.5
+          }
+        ]
+      }
+    }
+  },
+  "neural_grid": {
+    "architectures": [
+      "GRU",
+      "Transformer"
+    ],
+    "dimensions": [
+      8,
+      32,
+      128
+    ],
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "n_train": 256,
+    "expected_runs": 1440
+  },
+  "count_predictors": {
+    "n_train_values": [
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "alphas": [
+      0.1,
+      0.5,
+      1.0
+    ],
+    "methods": [
+      "additive",
+      "interpolated_backoff"
+    ],
+    "backoff_betas": [
+      1.0,
+      5.0,
+      20.0
+    ],
+    "primary_alpha": 0.5,
+    "primary_backoff_beta": 5.0
+  },
+  "primary_hypotheses": {
+    "H1": "Higher context occupancy increases count-predictor error under matched predictive-profile controls.",
+    "H2": "Higher predictive gain increases neural Bayes-shape recovery error when context occupancy and marginal entropy are matched.",
+    "H3": "The occupancy effect on count predictors weakens with sample size and interpolated backoff."
+  },
+  "created_at": "2026-07-18 08:23:07"
+}

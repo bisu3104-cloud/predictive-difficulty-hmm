@@ -1,0 +1,10 @@
+{
+  "status": "selection_locked",
+  "protocol": "predictor_specific_difficulty_matched_v1",
+  "selected_hmms": 48,
+  "pairs": 24,
+  "source_bank": "project://predictive_profile_confirmatory64_v1/candidate_bank/candidate_metrics_with_marginals.csv",
+  "excluded_previous_confirmatory_hmms": 64,
+  "created_at": "2026-07-18 02:16:45",
+  "learner_outcomes_used_for_selection": false
+}

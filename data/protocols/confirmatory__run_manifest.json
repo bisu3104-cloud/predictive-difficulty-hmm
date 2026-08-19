@@ -1,0 +1,149 @@
+{
+  "config": {
+    "DRIVE_ROOT": "drive://",
+    "PROJECT_ROOT": "project://predictive_profile_confirmatory64_v1",
+    "EXISTING_HMM_DIR": "project://hmm_sameK_transformer_gru_process_comparable_v1/data/regenerated_bundles",
+    "EXISTING_RESULTS_DIRS": [
+      "project://",
+      "project://tmlr_additional_experiments/"
+    ],
+    "MASTER_SEED": 2026071701,
+    "DEVICE": "auto",
+    "DETERMINISTIC_TORCH": true,
+    "K_VALUES": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "VOCAB_SIZE": 8,
+    "BANK_PER_K": 1000,
+    "BANK_SAVE_EVERY": 25,
+    "TRANSITION_ALPHA_GRID": [
+      0.2,
+      1.0,
+      5.0
+    ],
+    "SELF_BIAS_GRID": [
+      0.0,
+      2.0,
+      8.0
+    ],
+    "EMISSION_ALPHA_GRID": [
+      0.1,
+      0.5,
+      2.0
+    ],
+    "MIN_STATIONARY_PROB": 0.01,
+    "MIN_SYMBOL_PROB": 1e-05,
+    "MIN_CONTEXT_GAIN": 1e-05,
+    "MAX_HIDDEN_TAU": 10000.0,
+    "MAX_CONTEXT": 4,
+    "BANK_FUTURE_LENGTHS": [
+      1,
+      2
+    ],
+    "SELECTED_FUTURE_LENGTHS": [
+      1,
+      2,
+      3
+    ],
+    "SELECTION_FUTURE_LENGTH": 2,
+    "ENERGY_LEVELS": [
+      0.9,
+      0.95,
+      0.99
+    ],
+    "SPECTRAL_TOL": 1e-10,
+    "OBS_MIX_MAX_LAG": 50,
+    "RANK_PAIRS_PER_K": 2,
+    "SIGMA_PAIRS_PER_K": 1,
+    "CROSS_K_PAIRS": 6,
+    "MAX_SELECTED_HMMS": 24,
+    "MIN_RANK_CONTRAST": 1,
+    "MIN_LOG_SIGMA_CONTRAST": 0.35,
+    "MAX_CONTROL_DISTANCE": 2.5,
+    "RANK_MAX_GAIN_RATIO": 1.25,
+    "RANK_MAX_SIGMA_RATIO": 1.25,
+    "RANK_MAX_TAU_RATIO": 1.25,
+    "SIGMA_MIN_RATIO": 10.0,
+    "SIGMA_MAX_GAIN_RATIO": 1.25,
+    "SIGMA_MAX_TAU_RATIO": 1.35,
+    "MATCH_PROTOCOL_VERSION": "independent_profile_kmeans_holdout_v1",
+    "SEQUENCE_LENGTH": 300,
+    "N_TRAIN_MAX": 256,
+    "N_TRAIN_MAIN": 256,
+    "N_VAL": 32,
+    "N_TEST": 64,
+    "EVAL_WINDOWS_PER_SEQUENCE": 8,
+    "ARCHITECTURES": [
+      "GRU",
+      "Transformer"
+    ],
+    "DIMENSIONS": [
+      8,
+      32,
+      128,
+      256
+    ],
+    "SEEDS": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "BATCH_SIZE": 16,
+    "MIN_BATCH_SIZE": 2,
+    "LEARNING_RATE": 0.001,
+    "WEIGHT_DECAY": 0.0,
+    "MAX_EPOCHS": 48,
+    "EARLY_STOP_PATIENCE": 8,
+    "MIN_EPOCHS": 12,
+    "GRAD_CLIP_NORM": 1.0,
+    "TRANSFORMER_HEADS": 1,
+    "TRANSFORMER_LAYERS": 1,
+    "TRANSFORMER_FF_MULTIPLIER": 4,
+    "DROPOUT": 0.0,
+    "CHECKPOINT_EVERY_EPOCH": true,
+    "RUN_SAMPLE_SIZE_EXPERIMENT": false,
+    "SAMPLE_SIZE_VALUES": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "SAMPLE_SIZE_DIMENSION": 128,
+    "SAMPLE_SIZE_SEEDS": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "SAMPLE_SIZE_MAX_HMMS": 8,
+    "RUN_EMPIRICAL_RANK": false,
+    "EMPIRICAL_RANK_H": 4,
+    "EMPIRICAL_RANK_M": 1,
+    "EMPIRICAL_NULL_REPEATS": 100,
+    "EMPIRICAL_MAX_WINDOWS": 100000,
+    "IMPORT_EXISTING_HMMS": false,
+    "GENERATE_BANK": false,
+    "RUN_TRAINING": true,
+    "RUN_ANALYSIS": true,
+    "CONTINUE_AFTER_ERROR": true,
+    "RETRY_FAILED_CONDITIONS": true,
+    "FORCE_RECOMPUTE_METRICS": false,
+    "FORCE_RESELECT": false,
+    "FORCE_RETRAIN": false,
+    "QUICK_SMOKE_TEST": false
+  },
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "numpy": "2.0.2",
+  "pandas": "2.2.2",
+  "torch": "2.11.0+cpu",
+  "device": "cpu",
+  "cuda_available": false,
+  "started_at": "2026-07-17 15:57:46"
+}

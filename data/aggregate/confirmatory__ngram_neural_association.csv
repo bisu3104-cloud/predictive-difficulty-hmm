@@ -1,0 +1,5 @@
+architecture,neural_outcome,ngram_outcome,n,spearman_rho,p_value
+GRU,A_width_shape,shape_rmse,64,-0.5219322344322344,9.73253565984705e-06
+GRU,mean_excess_ce_H,excess_ce_H,64,-0.2614010989010988,0.036940583149324
+Transformer,A_width_shape,shape_rmse,64,-0.6042582417582416,1.2443196700711108e-07
+Transformer,mean_excess_ce_H,excess_ce_H,64,-0.2694139194139194,0.031333571137996

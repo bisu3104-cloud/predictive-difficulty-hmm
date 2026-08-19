@@ -1,0 +1,3 @@
+outcome,run_level_column,interaction_share,interaction_share_percent,ordinary_cluster_ci_lower_percent,ordinary_cluster_ci_upper_percent,ordinary_zero_fraction,k_stratified_ci_lower_percent,k_stratified_ci_upper_percent,k_stratified_zero_fraction
+Shape RMSE,shape_rmse,0.0018792931676453026,0.18792931676453026,0.0,8.541697633672442,0.5723,0.0,8.177405040251724,0.5691
+Terminal excess CE,excess_ce_H,0.16502929403964553,16.502929403964554,2.7342817470671457,28.439758658120585,0.0094,3.6466070645024455,28.636815240374002,0.0073

@@ -1,0 +1,70 @@
+{
+  "cohort": "strict_replication",
+  "n_hmms": 16,
+  "hmm_files": [
+    {
+      "file": "bank_K3_i000215.npz",
+      "sha256": "81dc1957e23054099657dfe91112e47e646cae23d60087da4aadf7f2e935d3f4"
+    },
+    {
+      "file": "bank_K3_i000956.npz",
+      "sha256": "404b03242f8aa25bc4c3a86315e3936f4766d2b53c0e43d387feec41b2073047"
+    },
+    {
+      "file": "bank_K3_i000970.npz",
+      "sha256": "f0dac82a88e134b1ffb90b5988a657d9d5b4ed247498a5774f09c2b644ae21fe"
+    },
+    {
+      "file": "bank_K3_i001094.npz",
+      "sha256": "799997f67a2f1f0e5c8f44055d685d2763b6ecb004d29a7d57526119889edd86"
+    },
+    {
+      "file": "bank_K4_i000146.npz",
+      "sha256": "a0396a819eeba0baefaa2564786e8d77b12395223f89f80df1320d3631e86b2a"
+    },
+    {
+      "file": "bank_K4_i000184.npz",
+      "sha256": "1c4d7632c526c6ce138bfac0bd90c24dfef277c5c9309c9abfbe5df3640d08fe"
+    },
+    {
+      "file": "bank_K4_i000559.npz",
+      "sha256": "19c7493f7cda9fc2ee50d3bcd489450b86281a40bcd1060c198657cbed0bc397"
+    },
+    {
+      "file": "bank_K4_i001237.npz",
+      "sha256": "0d3c569418d38d55f22d6decc8a1b033c0ad11fb322b98a47f0bae4ca9b70504"
+    },
+    {
+      "file": "bank_K5_i000044.npz",
+      "sha256": "ad902c6b739bc3737ad6314db1f17be8df2e31fb8634fd7b4d275f7e7336c4d9"
+    },
+    {
+      "file": "bank_K5_i000130.npz",
+      "sha256": "cb605140d091a85ef14a9933685f4ed861bd86b8103d49c938cb6cf7efe8db5f"
+    },
+    {
+      "file": "bank_K5_i000458.npz",
+      "sha256": "f9afe0973ecfd85e7c2a26114b62b4e16fa8c00edaf224cdbf7b403616094bd2"
+    },
+    {
+      "file": "bank_K5_i000689.npz",
+      "sha256": "27560d3a0744375ebc1aed69f62451d1fe13bd33b6c84922ee13b118b52cf4d6"
+    },
+    {
+      "file": "bank_K6_i000250.npz",
+      "sha256": "b21cd5f8e7ea2fc67c80f709c5b008996e5062524df29ac5063aca49f15f5455"
+    },
+    {
+      "file": "bank_K6_i000724.npz",
+      "sha256": "689bc6596e12855ef1267411ed15fcf0fedc07110bb38a89f6ad39436ae7de90"
+    },
+    {
+      "file": "bank_K6_i000841.npz",
+      "sha256": "151bcf4b467a5feb9d0ed2eea79b1dcae21dd4c0fa8109771405ba7ad7bcd86e"
+    },
+    {
+      "file": "bank_K6_i001071.npz",
+      "sha256": "cd3b91d2d5ee466be174632504cccf0168466c2529f0bef1a4a303600c063ce4"
+    }
+  ]
+}

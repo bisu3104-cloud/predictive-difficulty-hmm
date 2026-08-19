@@ -1,0 +1,17 @@
+paper_item,analysis,primary_source,code_source,status
+Main Table 2,Confirmatory frozen prediction,data/aggregate/confirmatory__confirmatory_holdout_performance.csv,existing notebook + source table,complete
+Main Table 3,Confirmatory cross-K matching,data/aggregate/confirmatory__crossK_confirmatory_summary.csv,02_confirmatory64.ipynb,complete
+Main Table 4,PLS/PCA neural composite,data/run_level/confirmatory__confirmatory_training_with_metrics.csv + data/hmms/confirmatory/selected_hmm_metrics_full.csv,code/scripts/reconstruct_confirmatory_table4_loho.py,complete (nested LOHO reconstruction)
+Main Table 5,Ranking agreement/reversals,predictor-specific neural and count run-level data,analysis script to consolidate,pending script consolidation
+Main Figure 2,Spearman and reversal heatmaps,same as Table 5,final figure script to consolidate,pending script consolidation
+Appendix Table 6,PLS-1 weights,confirmatory feature/outcome table,analysis script to consolidate,pending script consolidation
+Appendix strict contrasts,Rank and spectral-boundary effects,data/aggregate/strict__strict_matched_pair_effect_summary.csv,04_strict_replication.ipynb,complete
+Appendix count sparsity,Count diagnostic associations,predictor-specific count tables,03_predictor_specific.ipynb,complete
+Appendix predictive gain,Gain matched-pair reanalysis,predictor-specific pair/run tables,analysis script to consolidate,pending final summary script
+Appendix effective rank,Effective-rank associations,confirmatory feature/outcome table,analysis script to consolidate,pending final summary script
+Appendix external transfer,External frozen holdout,data/aggregate/external__external_frozen_holdout_performance.csv,05_external_generators.ipynb,complete
+Main Section 5.6 external PLS transfer,PLS composite trained on 8 confirmatory conditions and scored on 6 shared external conditions,confirmatory/external run-level Shape tables and selected-HMM feature tables,code/scripts/reconstruct_external_pls_transfer.py,complete
+Main Section 5.4 / Appendix C.3,Seed-aware process-by-condition variance components,data/run_level/confirmatory__confirmatory_training_with_metrics.csv,code/scripts/reconstruct_seed_aware_variance.py,complete (point estimates and fully specified replacement bootstrap)
+Main Section 5.4 / Appendix H,Dataset-realization robustness across three train/validation/test realizations,data/run_level/dataset_realization__training_with_metrics.csv + data/selections/dataset_realization_selected_hmms.csv,code/scripts/reconstruct_dataset_realization_analysis.py + code/notebooks/06_dataset_realization_robustness.ipynb,complete
+Appendix Table 24,HMM-level process ICC and dataset-pair rank stability,data/aggregate/dataset_realization__hmm_level_process_icc.csv + data/aggregate/dataset_realization__dataset_pair_rank_stability.csv,code/scripts/reconstruct_dataset_realization_analysis.py,complete
+Appendix Table 25,Frozen augmented-profile versus K-only prediction across dataset realizations,data/run_level/dataset_realization__training_with_metrics.csv + data/aggregate/confirmatory__confirmatory_holdout_predictions.csv,code/scripts/reconstruct_dataset_realization_analysis.py,complete

@@ -1,0 +1,21 @@
+{
+  "analysis": "Confirmatory neural seed-aware variance components",
+  "input_reference": "data/run_level/confirmatory__confirmatory_training_with_metrics.csv",
+  "input_rows": 2560,
+  "n_hmms": 64,
+  "n_conditions": 8,
+  "n_seeds": 5,
+  "condition_definition": "architecture x representation width",
+  "standardization": "Each outcome is standardized separately within each of the eight conditions over all 64 HMM x 5 seed observations using population standard deviation (ddof=0). The full-cohort transformation is fixed during bootstrap resampling.",
+  "variance_model": "Z_ics = mu + P_i + C_c + (PC)_ic + e_ics",
+  "estimator": "balanced ANOVA method-of-moments",
+  "interaction_share_definition": "max(sigma_PC^2,0) / [max(sigma_P^2,0) + max(sigma_PC^2,0)]",
+  "bootstrap": {
+    "repeats": 10000,
+    "seed": 20260718,
+    "ordinary": "Resample 64 HMMs with replacement; preserve all 8 conditions and 5 seeds for each draw.",
+    "k_stratified_sensitivity": "Resample 16 HMMs with replacement within each K=3,4,5,6 stratum.",
+    "interval": "2.5th and 97.5th percentile"
+  },
+  "historical_note": "The point estimates reproduce the earlier manuscript draft before rounding. The original historical bootstrap code was not preserved; v0.4 therefore defines and archives this fully reproducible replacement."
+}

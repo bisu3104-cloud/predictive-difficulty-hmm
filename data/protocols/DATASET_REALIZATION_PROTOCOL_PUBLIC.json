@@ -1,0 +1,97 @@
+{
+  "study": "dataset_realization_robustness",
+  "version": "public_protocol_v0.5",
+  "purpose": "Separate stable HMM/process differences from finite train-validation-test dataset-realization variability.",
+  "outcome_blind_subset_selection": true,
+  "subset_selection": {
+    "K_values": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "HMMs_per_K": 4,
+    "features": [
+      "log_gain",
+      "log_rank",
+      "neg_log_sigma",
+      "log_tau",
+      "bayes_ce_h4",
+      "symbol_entropy",
+      "log_min_symbol_prob",
+      "log_signal"
+    ],
+    "method": "within-K k-means, nearest observed HMM to each centroid",
+    "standardization_ddof": 0,
+    "kmeans_n_init": 50,
+    "kmeans_max_iter": 1000,
+    "kmeans_random_state": "2026080401 + K"
+  },
+  "dataset_replicates": [
+    0,
+    1,
+    2
+  ],
+  "reference_replicate": {
+    "id": 0,
+    "dataset": "original confirmatory train/validation/test split",
+    "runs": "existing training seeds 1-3 reused",
+    "dataset_cache_included": false
+  },
+  "new_dataset_replicates": {
+    "ids": [
+      1,
+      2
+    ],
+    "independent_train_validation_test_generation": true,
+    "dataset_files_included": false,
+    "reproduction": "Use the selected HMM parameter NPZ files, recorded split seeds, and the public runner."
+  },
+  "neural_grid": {
+    "architectures": [
+      "GRU",
+      "Transformer"
+    ],
+    "dimensions": [
+      8,
+      32,
+      128,
+      256
+    ],
+    "training_seeds": [
+      1,
+      2,
+      3
+    ],
+    "n_train": 256,
+    "n_val": 32,
+    "n_test": 64,
+    "sequence_length": 300,
+    "maximum_context": 4,
+    "expected_total_runs": 1152,
+    "expected_new_runs": 768
+  },
+  "optimization": {
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 16,
+    "maximum_epochs": 48,
+    "minimum_epochs": 12,
+    "early_stopping_patience": 8,
+    "gradient_norm_clip": 1.0,
+    "checkpoint_selection": "minimum mean validation cross-entropy over h=1,2,3,4"
+  },
+  "randomness": {
+    "master_seed": 2026080401,
+    "bootstrap_seed": 2026080402
+  },
+  "analysis": {
+    "dataset_pair_spearman": true,
+    "hmm_level_process_icc": true,
+    "full_nested_variance_components": true,
+    "frozen_development_profile_prediction": true,
+    "pca_stability": true,
+    "bootstrap_repeats": 5000
+  }
+}

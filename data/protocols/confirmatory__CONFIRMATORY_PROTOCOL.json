@@ -1,0 +1,112 @@
+{
+  "study": "independent_64_HMM_confirmatory_cohort",
+  "locked_before_learner_outcomes": true,
+  "master_seed": 2026071701,
+  "K_values": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "HMMs_per_K": 16,
+  "selection": {
+    "method": "KMeans coverage in standardized augmented profile space within each K",
+    "features": [
+      "log_gain",
+      "log_rank",
+      "neg_log_sigma",
+      "log_tau",
+      "bayes_ce_h4",
+      "symbol_entropy",
+      "log_min_symbol_prob",
+      "log_signal"
+    ],
+    "learner_outcomes_used": false
+  },
+  "neural_grid": {
+    "architectures": [
+      "GRU",
+      "Transformer"
+    ],
+    "dimensions": [
+      8,
+      32,
+      128,
+      256
+    ],
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "n_train": 256,
+    "n_val": 32,
+    "n_test": 64,
+    "sequence_length": 300
+  },
+  "frozen_models": {
+    "development_cohort": "earlier 24-HMM v2 cohort",
+    "ridge_alpha": 1.0,
+    "feature_sets": {
+      "K_only": [
+        "log_K"
+      ],
+      "core_profile": [
+        "log_gain",
+        "log_rank",
+        "neg_log_sigma",
+        "log_tau"
+      ],
+      "augmented_profile": [
+        "log_gain",
+        "log_rank",
+        "neg_log_sigma",
+        "log_tau",
+        "bayes_ce_h4",
+        "symbol_entropy",
+        "log_min_symbol_prob",
+        "log_signal"
+      ]
+    },
+    "primary_outcomes": [
+      "A_width_shape",
+      "mean_excess_ce_H"
+    ],
+    "secondary_outcomes": [
+      "best_shape_rmse"
+    ],
+    "no_refitting_on_confirmatory_outcomes": true
+  },
+  "cross_K": {
+    "K_pairs": [
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "target_pairs": 12,
+    "profile_rms_caliper": 1.5,
+    "matching_features": [
+      "log_gain",
+      "log_rank",
+      "neg_log_sigma",
+      "log_tau",
+      "bayes_ce_h4",
+      "symbol_entropy",
+      "log_min_symbol_prob",
+      "log_signal"
+    ]
+  },
+  "ngram_alpha": 0.5,
+  "created_at": "2026-07-17 04:07:16"
+}

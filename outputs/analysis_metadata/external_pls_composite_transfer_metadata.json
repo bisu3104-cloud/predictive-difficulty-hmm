@@ -1,0 +1,37 @@
+{
+  "analysis": "external PLS composite transfer",
+  "confirmatory_training_conditions": [
+    "GRU_d8",
+    "GRU_d32",
+    "GRU_d128",
+    "GRU_d256",
+    "Transformer_d8",
+    "Transformer_d32",
+    "Transformer_d128",
+    "Transformer_d256"
+  ],
+  "external_evaluation_conditions": [
+    "GRU_d8",
+    "GRU_d32",
+    "GRU_d128",
+    "Transformer_d8",
+    "Transformer_d32",
+    "Transformer_d128"
+  ],
+  "n_confirmatory_hmms": 64,
+  "n_external_hmms": 32,
+  "feature_columns": [
+    "log_gain",
+    "log_rank",
+    "neg_log_sigma",
+    "log_tau",
+    "bayes_ce_h4",
+    "symbol_entropy",
+    "log_min_symbol_prob",
+    "log_signal"
+  ],
+  "PLS_training_response": "All eight confirmatory architecture-width Shape-RMSE conditions.",
+  "external_scoring_response": "The six architecture-width Shape-RMSE conditions shared by the confirmatory and external cohorts.",
+  "K_only_comparator": "Condition-wise confirmatory mean within categorical K.",
+  "standardization": "Predictors and the eight-condition response matrix were standardized using the full confirmatory cohort."
+}

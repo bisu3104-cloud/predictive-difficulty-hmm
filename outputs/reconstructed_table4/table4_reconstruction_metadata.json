@@ -1,0 +1,43 @@
+{
+  "analysis": "Confirmatory LOHO neural Shape composite (manuscript Table 4)",
+  "input_mode": "extracted artifact",
+  "n_hmms": 64,
+  "conditions": [
+    "GRU_d8",
+    "GRU_d32",
+    "GRU_d128",
+    "GRU_d256",
+    "Transformer_d8",
+    "Transformer_d32",
+    "Transformer_d128",
+    "Transformer_d256"
+  ],
+  "predictor_columns": [
+    "log_gain",
+    "log_rank",
+    "neg_log_sigma",
+    "log_tau",
+    "bayes_ce_h4",
+    "symbol_entropy",
+    "log_min_symbol_prob",
+    "log_signal"
+  ],
+  "ridge_alpha_grid": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0,
+    32.0
+  ],
+  "ridge_selection": "Nested LOHO within each 63-HMM outer training fold; pooled RMSE in the response-standardized space of each inner training fold; ties resolved in favor of the larger alpha.",
+  "selected_alpha_counts": {
+    "4.0": 1,
+    "8.0": 62,
+    "16.0": 1
+  },
+  "fold_preprocessing": "Predictor standardization, response standardization, ridge penalty selection, and model fitting use only HMMs available in the corresponding fold.",
+  "standardized_rmse": "Pooled RMSE after dividing raw outer-LOHO residuals by the full-confirmatory condition-wise sample SD (ddof=1).",
+  "pooled_r2": "Variance-weighted multi-output R2 on raw Shape RMSE.",
+  "mean_spearman": "Arithmetic mean of eight condition-specific Spearman correlations."
+}

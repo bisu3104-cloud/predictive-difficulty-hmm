@@ -1,0 +1,43 @@
+{
+  "status": "public_reconstruction_of_lock_used_before_new_training",
+  "selection_method": "within-K k-means coverage; nearest observed HMM to each centroid",
+  "learner_outcomes_used": false,
+  "features": [
+    "log_gain",
+    "log_rank",
+    "neg_log_sigma",
+    "log_tau",
+    "bayes_ce_h4",
+    "symbol_entropy",
+    "log_min_symbol_prob",
+    "log_signal"
+  ],
+  "standardization": "within K using population standard deviations over the 16 confirmatory HMMs at that K",
+  "kmeans": {
+    "n_clusters": 4,
+    "n_init": 50,
+    "max_iter": 1000,
+    "random_state": "2026080401 + K"
+  },
+  "selection_config_sha256": "8f2be693ccb675688e0acf876aec49611b631425f6f1c22bdcbb4a938fa01f17",
+  "hmm_ids_sha256": "60471fb3badd84001dccf0b047b761e33adf7e120827df6df1e5ad0060edbb8c",
+  "hmm_ids": [
+    "confirm_K3_i000341",
+    "confirm_K3_i000321",
+    "confirm_K3_i001202",
+    "confirm_K3_i000975",
+    "confirm_K4_i000448",
+    "confirm_K4_i000654",
+    "confirm_K4_i000373",
+    "confirm_K4_i000909",
+    "confirm_K5_i000202",
+    "confirm_K5_i001133",
+    "confirm_K5_i000312",
+    "confirm_K5_i000834",
+    "confirm_K6_i000105",
+    "confirm_K6_i001189",
+    "confirm_K6_i000997",
+    "confirm_K6_i000708"
+  ],
+  "reconstruction_note": "The original Drive lock was not required for this compact release; this file was deterministically reconstructed from the public confirmatory HMM metrics and the frozen experiment code."
+}

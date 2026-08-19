@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Local generated caches/checkpoints (not part of the public artifact)
+checkpoints/
+runs/
+logs/

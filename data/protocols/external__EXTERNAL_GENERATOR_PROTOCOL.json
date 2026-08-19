@@ -1,0 +1,87 @@
+{
+  "study": "external_generator_robustness",
+  "protocol_version": "external_generator_profile_stratified_v1",
+  "generator_families": [
+    "sticky_dense_logistic_normal",
+    "ring_sparse_specialized"
+  ],
+  "K_values": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "candidate_bank_per_cell": 250,
+  "selected_hmms_per_cell": 4,
+  "selection": {
+    "method": "KMeans profile stratification within each K-generator cell",
+    "features": [
+      "log_gain",
+      "log_rank",
+      "neg_log_sigma",
+      "log_tau",
+      "bayes_ce_h4",
+      "symbol_entropy",
+      "log_min_symbol_prob",
+      "log_signal"
+    ],
+    "learner_outcomes_used": false
+  },
+  "neural_grid": {
+    "architectures": [
+      "GRU",
+      "Transformer"
+    ],
+    "dimensions": [
+      8,
+      32,
+      128
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "n_train": 256,
+    "expected_runs": 576
+  },
+  "primary_analysis": {
+    "development_cohort": "completed independent confirmatory64 cohort",
+    "matching_widths": [
+      8,
+      32,
+      128
+    ],
+    "models": {
+      "K_only": [
+        "log_K"
+      ],
+      "core_profile": [
+        "log_gain",
+        "log_rank",
+        "neg_log_sigma",
+        "log_tau"
+      ],
+      "augmented_profile": [
+        "log_gain",
+        "log_rank",
+        "neg_log_sigma",
+        "log_tau",
+        "bayes_ce_h4",
+        "symbol_entropy",
+        "log_min_symbol_prob",
+        "log_signal"
+      ]
+    },
+    "outcomes": [
+      "A_width_shape",
+      "mean_excess_ce_H"
+    ],
+    "ridge_alpha": 1.0
+  },
+  "secondary_analysis": {
+    "adjacent_K_matching_within_generator": true,
+    "best_width_distribution": true
+  },
+  "created_at": "2026-07-18 08:25:37"
+}
