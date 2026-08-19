@@ -1,6 +1,6 @@
 # Public release checklist
 
-## Completed in this release candidate
+## Completed before final public release
 
 - [x] Artifact validation passes.
 - [x] 184 selected HMM NPZ files pass probability/stationarity checks.
@@ -16,11 +16,12 @@
 - [x] Choose the code license: MIT.
 - [x] Choose the data/results license: CC BY 4.0.
 - [x] Add explicit license files and a licensing scope statement to the README.
-- [ ] Create the GitHub repository and record its public URL.
-- [ ] Create a Zenodo draft and reserve its DOI.
-- [ ] Add the GitHub URL and reserved Zenodo DOI to `CITATION.cff`.
-- [ ] Replace DOI/repository placeholders in README/data-availability documentation and manuscript.
-- [ ] Re-run `python code/scripts/validate_artifact.py`.
+- [x] Create the GitHub repository and record its URL (`https://github.com/bisu3104-cloud/predictive-difficulty-hmm`).
+- [x] Create a Zenodo draft and reserve DOI `10.5281/zenodo.22004946`.
+- [x] Add the GitHub URL and reserved Zenodo DOI to `CITATION.cff`.
+- [x] Replace DOI/repository placeholders in README and data-availability documentation.
+- [ ] Replace the DOI placeholder in the manuscript with `10.5281/zenodo.22004946` and add the GitHub URL if desired.
+- [x] Re-run `python code/scripts/validate_artifact.py` after release-metadata updates.
 - [ ] Create the final GitHub tag/release.
 - [ ] Upload the exact final release archive to the reserved Zenodo record and publish it.
 

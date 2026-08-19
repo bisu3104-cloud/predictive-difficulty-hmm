@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this artifact, please cite this version of the research artifact."
-title: "Predictive Difficulty Beyond Hidden-State Cardinality: Public Artifact"
+title: "Predictive Difficulty Beyond Hidden-State Cardinality: Data and Code Artifact"
 authors:
   - family-names: Ikeda
     given-names: Satoshi
@@ -12,6 +12,12 @@ authors:
     given-names: Hyuma
     affiliation: "Graduate School of Engineering, University of Miyazaki"
 version: 0.5.0
+date-released: 2026-08-19
+repository-code: "https://github.com/bisu3104-cloud/predictive-difficulty-hmm"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22004946"
+    description: "Zenodo archive DOI for artifact version 0.5.0"
 keywords:
   - predictive difficulty
   - hidden Markov models

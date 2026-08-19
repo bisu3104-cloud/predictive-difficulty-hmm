@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.5.0 release metadata — 2026-08-19
+
+- Added GitHub repository URL `https://github.com/bisu3104-cloud/predictive-difficulty-hmm`.
+- Added reserved Zenodo DOI `10.5281/zenodo.22004946`.
+- Updated `CITATION.cff`, README, and Data and Code Availability text for the public release.
+- Scientific data, run-level results, and analysis code were not changed.
+
 ## v0.5 release-candidate cleanup — 2026-08-19
 
 - Removed notebook outputs and Colab account/execution metadata before public release.
@@ -19,7 +26,7 @@
 - Added manuscript Tables 24 and 25 under `outputs/paper_tables/`.
 - Added resumable notebook `06_dataset_realization_robustness.ipynb`, public runner, and standalone reconstruction script.
 - Extended artifact validation, data dictionary, schema, reproducibility matrix, source-archive notes, and manifest.
-- Updated citation metadata to version 0.5.0. DOI, repository URL, and licenses remain placeholders.
+- Updated citation metadata to version 0.5.0; release identifiers were added in the 2026-08-19 release-metadata update above.
 
 ## v0.4 — 2026-08-04
 

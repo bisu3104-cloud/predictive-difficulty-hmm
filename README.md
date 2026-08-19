@@ -1,6 +1,6 @@
-# Predictive Difficulty Beyond Hidden-State Cardinality — Public Artifact v0.5 (release candidate)
+# Predictive Difficulty Beyond Hidden-State Cardinality — Public Artifact v0.5.0
 
-This package is a **curated source-data and code release candidate** for the manuscript
+This package is the **curated source-data and code artifact (version 0.5.0)** for the manuscript
 *Predictive Difficulty Beyond Hidden-State Cardinality: A Shared Process Component and Learner-Specific Responses in Controlled Hidden Markov Models*.
 
 ## What is included
@@ -84,11 +84,15 @@ This repository uses a mixed-license arrangement:
 
 If a particular third-party file states its own license, that file-specific license takes precedence.
 
-## Public-release status
+## Release identifiers
 
-The scientific artifact is complete, passes validation, and now has explicit code/data licenses.
-The remaining release metadata are the GitHub repository URL and Zenodo DOI.
-`CITATION.cff` intentionally omits repository/DOI fields until real values exist, so GitHub/Zenodo metadata parsers do not receive invalid placeholder values. See `docs/PUBLIC_RELEASE_CHECKLIST.md`.
+- GitHub repository: `https://github.com/bisu3104-cloud/predictive-difficulty-hmm`
+- Zenodo DOI: `10.5281/zenodo.22004946`
+- Version: `0.5.0`
+
+The scientific artifact is complete, passes validation, and has explicit code/data licenses.
+`CITATION.cff` contains the repository URL and reserved Zenodo DOI for this release.
+The DOI becomes registered when the corresponding Zenodo draft is published.
 
 The Colab notebooks are preserved as experiment-provenance source code. Outputs and user-specific
 execution metadata have been removed; see `code/notebooks/README.md`.
